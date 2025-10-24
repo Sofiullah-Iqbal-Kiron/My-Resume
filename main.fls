@@ -762,8 +762,6 @@ INPUT g:/program files/texlive/2022/texmf-dist/fonts/tfm/public/lm/lmmi9.tfm
 INPUT g:/program files/texlive/2022/texmf-dist/fonts/tfm/public/lm/lmmi6.tfm
 INPUT g:/program files/texlive/2022/texmf-dist/fonts/tfm/public/lm/lmsy9.tfm
 INPUT g:/program files/texlive/2022/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm
-INPUT g:/program files/texlive/2022/texmf-dist/fonts/tfm/bitstrea/charter/bchri8t.tfm
-INPUT g:/program files/texlive/2022/texmf-dist/fonts/tfm/bitstrea/charter/bchbi8t.tfm
 INPUT g:/program files/texlive/2022/texmf-dist/fonts/vf/bitstrea/charter/bchr8t.vf
 INPUT g:/program files/texlive/2022/texmf-dist/fonts/tfm/bitstrea/charter/bchr8r.tfm
 INPUT g:/program files/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -771,18 +769,12 @@ INPUT g:/program files/texlive/2022/texmf-dist/fonts/vf/bitstrea/charter/bchr8t.
 INPUT g:/program files/texlive/2022/texmf-dist/fonts/tfm/bitstrea/charter/bchr8r.tfm
 INPUT g:/program files/texlive/2022/texmf-dist/fonts/vf/bitstrea/charter/bchb8t.vf
 INPUT g:/program files/texlive/2022/texmf-dist/fonts/tfm/bitstrea/charter/bchb8r.tfm
-INPUT g:/program files/texlive/2022/texmf-dist/fonts/vf/bitstrea/charter/bchri8t.vf
-INPUT g:/program files/texlive/2022/texmf-dist/fonts/tfm/bitstrea/charter/bchri8r.tfm
 INPUT g:/program files/texlive/2022/texmf-dist/fonts/vf/bitstrea/charter/bchb8t.vf
 INPUT g:/program files/texlive/2022/texmf-dist/fonts/tfm/bitstrea/charter/bchb8r.tfm
-INPUT g:/program files/texlive/2022/texmf-dist/fonts/vf/bitstrea/charter/bchbi8t.vf
-INPUT g:/program files/texlive/2022/texmf-dist/fonts/tfm/bitstrea/charter/bchbi8r.tfm
 INPUT main.aux
-INPUT g:/program files/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT g:/program files/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
+INPUT g:/program files/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT g:/program files/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb
-INPUT g:/program files/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb
 INPUT g:/program files/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb
-INPUT g:/program files/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb
 INPUT g:/program files/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT g:/program files/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy9.pfb

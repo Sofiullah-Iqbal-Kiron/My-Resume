@@ -113,11 +113,7 @@
 % --------------------------------------------------
 % Entry environments
 % --------------------------------------------------
-\newenvironment{onecolentry}{
-  \begin{adjustwidth}{0cm + 0.00001cm}{0cm + 0.00001cm}
-}{
-  \end{adjustwidth}
-}
+\newenvironment{onecolentry}{\begin{adjustwidth}{0cm + 0.00001cm}{0cm + 0.00001cm}}{\end{adjustwidth}}
 
 \newenvironment{twocolentry}[2][]{
   \onecolentry
@@ -161,8 +157,8 @@
       \LenToUnit{\paperheight-1.0cm}
     ){
       \vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in September 2024}%
-        \hspace{\widthof{Last updated in September 2024}}
+        \small\color{gray}\textit{Last updated in October 2025}%
+        \hspace{\widthof{Last updated in October 2025}}%
       }}
     }
   }
@@ -179,8 +175,8 @@
 \begin{document}
 
 \newcommand{\AND}{\unskip
-    \cleaders\copy\ANDbox\hskip\wd\ANDbox
-    \ignorespaces
+  \cleaders\copy\ANDbox\hskip\wd\ANDbox
+  \ignorespaces
 }
 \newsavebox\ANDbox
 \sbox\ANDbox{$|$}
@@ -189,45 +185,31 @@
 % Header
 % --------------------------------------------------
 \begin{header}
-    \fontsize{25pt}{25pt}\selectfont Md. Kazi Iqbal Hossen
+  \fontsize{25pt}{25pt}\selectfont Md. Kazi Iqbal Hossen
 
-    \vspace{5pt}
+  \vspace{5pt}
 
-    \normalsize
-    \mbox{Dhaka, Bangladesh}%
-    \kern 5pt \AND \kern 5pt%
-    \mbox{\hrefWithoutArrow{mailto:mdkaziiqbalhossen.official@gmail.com}{mdkaziiqbalhossen.official@gmail.com}}%
-    \kern 5pt \AND \kern 5pt%
-    \mbox{\hrefWithoutArrow{tel:+8801850561548}{01850-561548}}%
-    \kern 5pt \AND \kern 5pt%
-    \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/sofiullah-iqbal-kiron-968a841b9}{linkedin.com/in/sofiullah-iqbal-kiron-968a841b9}}%
-    \kern 5pt \AND \kern 5pt%
-    \mbox{\hrefWithoutArrow{https://github.com/Sofiullah-Iqbal-Kiron}{github.com/Sofiullah-Iqbal-Kiron}}%
+  \normalsize
+  \mbox{Dhaka, Bangladesh}%
+  \kern 5pt \AND \kern 5pt%
+  \mbox{\hrefWithoutArrow{mailto:mdkaziiqbalhossen.official@gmail.com}{mdkaziiqbalhossen.official@gmail.com}}%
+  \kern 5pt \AND \kern 5pt%
+  \mbox{\hrefWithoutArrow{tel:+8801850561548}{01850-561548}}%
+  \kern 5pt \AND \kern 5pt%
+  \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/sofiullah-iqbal-kiron-968a841b9}{linkedin.com/in/sofiullah-iqbal-kiron-968a841b9}}%
+  \kern 5pt \AND \kern 5pt%
+  \mbox{\hrefWithoutArrow{https://github.com/Sofiullah-Iqbal-Kiron}{github.com/Sofiullah-Iqbal-Kiron}}%
 \end{header}
 
 \vspace{5pt - 0.3cm}
 
 % --------------------------------------------------
-% Section: About Me
+% Section: Profile
 % --------------------------------------------------
-\section{About Me}
+\section{Profile}
 
 \begin{onecolentry}
-    Computer Science graduate from GSTU. Fullstack Web Programmer who writes codes in React and Django. Proficient at developing and delivering RESTful APIs, ensuring site's data security and application's scalability. Experienced Software Engineer with a demonstrated history of working in the software industry.
-\end{onecolentry}
-
-% --------------------------------------------------
-% Section: Quick Guide
-% --------------------------------------------------
-\section{Quick Guide}
-
-\begin{onecolentry}
-    \begin{highlightsforbulletentries}
-        \item Each section title is arbitrary and each section contains a list of entries.
-        \item There are 7 unique entry types: \textit{BulletEntry}, \textit{TextEntry}, \textit{EducationEntry}, \textit{ExperienceEntry}, \textit{NormalEntry}, \textit{PublicationEntry}, and \textit{OneLineEntry}.
-        \item Select a section title, pick an entry type, and start writing your section!
-        \item \href{https://docs.rendercv.com/user_guide/}{Here}, you can find a comprehensive user guide for RenderCV.
-    \end{highlightsforbulletentries}
+  Computer Science graduate from GSTU. Fullstack Web Programmer expertise in NextJS and Django. Proficient at developing and delivering RESTful APIs, ensuring site's data security and application's scalability. Experienced Software Engineer with a demonstrated history of working in the corporate industry.
 \end{onecolentry}
 
 % --------------------------------------------------
@@ -235,17 +217,17 @@
 % --------------------------------------------------
 \section{Education}
 
-\begin{twocolentry}{Sept 2000 – May 2005}
-    \textbf{University of Pennsylvania}, BS in Computer Science
+\begin{twocolentry}{Jan 2019 -- Dec 2022}
+  \textbf{Gopalganj Science \& Technology University}, B. Sc. in CSE
 \end{twocolentry}
 
 \vspace{0.10cm}
 
 \begin{onecolentry}
-    \begin{highlights}
-        \item GPA: 3.9/4.0 (\href{https://example.com}{a link to somewhere})
-        \item \textbf{Coursework:} Computer Architecture, Comparison of Learning Algorithms, Computational Theory
-    \end{highlights}
+  \begin{highlights}
+    \item CGPA: 3.63 out of 4.00
+    \item Coursework: Computer Architecture, Data Structure \& Algorithm, Computational Thinking, Problem Solving, System Design, Requirements Analysis.
+  \end{highlights}
 \end{onecolentry}
 
 % --------------------------------------------------
@@ -254,136 +236,180 @@
 \section{Experience}
 
 \begin{twocolentry}{Jan 2025 -- Present}
-    \textbf{Backend Lead}, GameBD -- Banani, Dhaka
+  \textbf{Backend Lead}, GameBD -- Banani, Dhaka
 \end{twocolentry}
 
 \vspace{0.10cm}
 
 \begin{onecolentry}
-    \begin{highlights}
-        \item Led to the development of a scalable backend architecture using Django and PostgreSQL.
-        \item Designed the database schemas and implemented Django models that ensures efficient SQL queries.
-        \item Delivered RESTful APIs along with 2FA (Email), JWT (Auth), SHA512 (Password) and OAuth2 (Google).
-        \item Collaborated with frontend developers to integrate backend services, ensuring seamless data flow and eliminating unnecessary API calls.
-        \item Optimized database queries and indexing strategies, resulting in low latency and high throughput.
-        \item Mentored junior developers, fostering a collaborative team environment and promoting best coding practices (SOLID, OOP, Design Patterns).
-    \end{highlights}
+  \begin{highlights}
+    \item Led to the development of a scalable backend architecture using Django and PostgreSQL.
+    \item Designed the database schemas and implemented Django models that ensures efficient SQL queries.
+    \item Delivered RESTful APIs along with 2FA (Email), JWT (Auth), SHA512 (Password) and OAuth2 (Google).
+    \item Collaborated with frontend developers to integrate backend services, ensuring seamless data flow and eliminating unnecessary API calls.
+    \item Optimized database queries and indexing strategies, resulting in low latency and high throughput.
+    \item Mentored 2 junior developers, fostering a collaborative team environment and promoting best coding practices (SOLID, OOP, Design Patterns).
+  \end{highlights}
 \end{onecolentry}
 
 \vspace{0.20cm}
 
 \begin{twocolentry}{Dec 2024 -- Jan 2025}
-    \textbf{Augmented Reality Engineer}, Next Solution Lab -- Mirpur DOHS, Dhaka
+  \textbf{Augmented Reality Engineer}, Next Solution Lab -- Mirpur DOHS, Dhaka
 \end{twocolentry}
 
 \vspace{0.10cm}
 
 \begin{onecolentry}
-    \begin{highlights}
-        \item Developed an AR mobile application using React Native and SnapAR SDK that overlays 3D shoe models onto real-world environments.
-        \item Use SnapAR's object recognition capabilities to trigger AR experiences on Fashion products.
-        \item Design and develop snap lenses that provides real world fashion try-on experiences.
-    \end{highlights}
+  \begin{highlights}
+    \item Developed an AR mobile application using React Native and SnapAR SDK that overlays 3D shoe models onto real feet.
+    \item Use SnapAR's object recognition capabilities to trigger AR experiences on Fashion products.
+    \item Design and develop snap lenses that provides real world fashion try-on experiences.
+  \end{highlights}
 \end{onecolentry}
 
 \vspace{0.20cm}
 
 \begin{twocolentry}{Aug 2024 -- Nov 2024}
-    \textbf{Backend Developer}, Techforing Ltd. -- Baridhara DOHS, Dhaka
+  \textbf{Backend Developer}, Techforing Ltd. -- Baridhara DOHS, Dhaka
 \end{twocolentry}
 
 \vspace{0.10cm}
 
 \begin{onecolentry}
-    \begin{highlights}
-        \item Optimized and maintained existing HRMS backend built with Django and MySQL.
-        \item Implemented KPI tracking and reporting features for different departments.
-        \item Designed systems to convert monolithic architecture into microservices using Redis, FastAPI, Celery and Docker.
-    \end{highlights}
+  \begin{highlights}
+    \item Optimized and maintained existing HRMS backend built with Django and MySQL.
+    \item Implemented KPI tracking and monthly reporting features for different departments.
+    \item Designed systems to convert monolithic architecture into microservices using Redis, FastAPI, Celery and Docker.
+  \end{highlights}
 \end{onecolentry}
 
-% --------------------------------------------------
-% Section: Publications
-% --------------------------------------------------
-\section{Publications}
+\vspace{0.20cm}
 
-\begin{samepage}
-    \begin{twocolentry}{Jan 2004}
-        \textbf{3D Finite Element Analysis of No-Insulation Coils}
-    \end{twocolentry}
+\begin{twocolentry}{Dec 2024 -- Present}
+  \textbf{Head of Engineering (Contractual)}, ParcelFly Courier -- Bongshal, Dhaka
+\end{twocolentry}
 
-    \vspace{0.10cm}
+\vspace{0.10cm}
 
-    \begin{onecolentry}
-        \mbox{Frodo Baggins}, \mbox{\textbf{\textit{John Doe}}}, \mbox{Samwise Gamgee}
+\begin{onecolentry}
+  \begin{highlights}
+    \item Design and develop the entire courier service automation system.
+    \item Implement the backend system (REST API) using Django and PostgreSQL, hosted on Heroku.
+    \item Develop the entire frontend (Merchant Panel, Hub Panel, Admin Panel) using NextJS 15 and Shadcn/ui. Added theming (light \& dark) and dynamic rider onboarding.
+    \item Develop the Rider Mobile App using React Native and Expo. Riders can view delivery assignments, update delivery status and tracking content.
+  \end{highlights}
+\end{onecolentry}
 
-        \vspace{0.10cm}
+\vspace{0.20cm}
 
-        \href{https://doi.org/10.1109/TASC.2023.3340648}{10.1109/TASC.2023.3340648}
-    \end{onecolentry}
-\end{samepage}
+\begin{twocolentry}{Apr 2024 -- Jan 2025}
+  \textbf{Fullstack Developer (Contractual)}, One Academy -- Bakshibazar, Dhaka
+\end{twocolentry}
+
+\vspace{0.10cm}
+
+\begin{onecolentry}
+  \begin{highlights}
+    \item Created and maintained the academy management system using Django (backend) and React (frontend).
+    \item Implemented features such as student, teacher and staff authentication, profile management, course management, attendance tracking, exam setting by teachers and online exam taking by students.
+  \end{highlights}
+\end{onecolentry}
+
+% % --------------------------------------------------
+% % Section: Publications
+% % --------------------------------------------------
+% \section{Publications}
+
+% \begin{samepage}
+%   \begin{twocolentry}{Jan 2004}
+%     \textbf{3D Finite Element Analysis of No-Insulation Coils}
+%   \end{twocolentry}
+
+%   \vspace{0.10cm}
+
+%   \begin{onecolentry}
+%     \mbox{Frodo Baggins}, \mbox{\textbf{\textit{John Doe}}}, \mbox{Samwise Gamgee}
+
+%     \vspace{0.10cm}
+
+%     \href{https://doi.org/10.1109/TASC.2023.3340648}{10.1109/TASC.2023.3340648}
+%   \end{onecolentry}
+% \end{samepage}
 
 % --------------------------------------------------
 % Section: Projects
 % --------------------------------------------------
 \section{Projects}
 
-\begin{twocolentry}{\href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}}
-    \textbf{Multi-User Drawing Tool}
+\begin{twocolentry}{\href{https://play.readylab.co/}{play.readylab.co}}
+  \textbf{Loyalty Platform for ReadyLab}
 \end{twocolentry}
 
 \vspace{0.10cm}
 
 \begin{onecolentry}
-    \begin{highlights}
-        \item Developed an electronic classroom where multiple users can simultaneously view and draw on a "chalkboard" with each person's edits synchronized
-        \item Tools Used: C++, MFC
-    \end{highlights}
+  \begin{highlights}
+    \item A loyalty 3.0 platform that allows businesses to create and manage customer loyalty programs, track their engagement, and reward loyal customers. Based on Philippines.
+    \item Tools Used: NextJS, REST API, Django, MySQL, Redis
+  \end{highlights}
 \end{onecolentry}
 
 \vspace{0.2cm}
 
-\begin{twocolentry}{\href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}}
-    \textbf{Synchronized Desktop Calendar}
+\begin{twocolentry}{\href{https://play.gamebd.co/}{play.gamebd.co}}
+  \textbf{Gamification Platform for GameBD}
 \end{twocolentry}
 
 \vspace{0.10cm}
 
 \begin{onecolentry}
-    \begin{highlights}
-        \item Developed a desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users
-        \item Tools Used: C\#, .NET, SQL, XML
-    \end{highlights}
+  \begin{highlights}
+    \item A gamification platform that offers a variety of games, tournaments, missions, and point rewards to engage gamers and enhance their experience on the GameBD's partners platform (bKash, Nagad, Pathao).
+    \item Tools Used: NextJS, REST API, Django, PostgreSQL, Redis, AWS
+  \end{highlights}
 \end{onecolentry}
 
 \vspace{0.2cm}
 
-\begin{twocolentry}{2002}
-    \textbf{Custom Operating System}
+\begin{twocolentry}{\href{https://www.parcelflybd.com/}{www.parcelflybd.com}}
+  \textbf{Courier Service Automation for ParcelFly}
 \end{twocolentry}
 
 \vspace{0.10cm}
 
 \begin{onecolentry}
-    \begin{highlights}
-        \item Built a UNIX-style OS with a scheduler, file system, text editor, and calculator
-        \item Tools Used: C
-    \end{highlights}
+  \begin{highlights}
+    \item A courier service automation system that streamlines parcel delivery operations, including merchant panel, hub panel, admin panel, and rider mobile app.
+    \item Tools Used: NextJS, REST API, Django, PostgreSQL, Expo, React Native, Heroku
+  \end{highlights}
 \end{onecolentry}
 
 % --------------------------------------------------
-% Section: Technologies
+% Section: Skills
 % --------------------------------------------------
-\section{Technologies}
+\section{Skills}
 
 \begin{onecolentry}
-    \textbf{Languages:} C++, C, Java, Objective-C, C\#, SQL, JavaScript
+  \textbf{Languages:} C, C++, Java, JavaScript, TypeScript, Python, MQL5, SQL, HTML, CSS
 \end{onecolentry}
 
 \vspace{0.2cm}
 
 \begin{onecolentry}
-    \textbf{Technologies:} .NET, Microsoft SQL Server, XCode, Interface Builder
+  \textbf{Frameworks:} JavaFX, React, React Native, NextJS, FastAPI, Django, LaTeX, Manim Community
+\end{onecolentry}
+
+\vspace{0.2cm}
+
+\begin{onecolentry}
+  \textbf{Database:} PostgreSQL, MySQL, SQLite, Redis
+\end{onecolentry}
+
+\vspace{0.2cm}
+
+\begin{onecolentry}
+  \textbf{Tools:} Scene Builder, VSCode, IntelliJ IDEA, Git, GitHub, Vite, Ruff, Expo, Docker, Postman, Figma
 \end{onecolentry}
 
 \end{document}
